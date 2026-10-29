@@ -37,11 +37,11 @@ public class ThirdActivity extends AppCompatActivity implements View.OnClickList
 
         if (id == R.id.btnCall) {
             // Открытие телефона
-            intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:12345"));
+            intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:112"));
             startActivity(intent);
         } else if (id == R.id.btnSms) {
             // Открытие  СМС
-            intent = new Intent(Intent.ACTION_VIEW, Uri.parse("smsto:12345"));
+            intent = new Intent(Intent.ACTION_VIEW, Uri.parse("smsto:89137771020"));
             intent.putExtra("sms_body", "Привет! Это тестовое сообщение.");
             startActivity(intent);
         }
